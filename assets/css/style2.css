@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    
+}
+.cajas{
+    display: flex;
+    flex-direction: column;
+}

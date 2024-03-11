@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cajas">
+            <img src="./assets/img/sticker 1.jpg" alt="">
+            <input class="sticker1" type="">
+        </div>
+        <div class="cajas">
+            <img src="./assets/img/sticker 2.jpg" alt="">
+            <input class="sticker2" type="">
+        </div>
+        <div class="cajas">
+            <img src="./assets/img/sticker 3.jpg" alt="">
+            <input class="sticker3" type="">
+        </div>
+    </div>
+    <button onclick="
+    parrafo = document.querySelector('p')
+    uno = document.querySelector('.sticker1').value
+    dos = document.querySelector('.sticker2').value
+    tres = document.querySelector('.sticker3').value
+    total = Number(uno) + Number(dos) + Number(tres)
+    if (total >10) {
+        parrafo.innerHTML = 'llevas demasiados stickers'
+    }else if (total <10) {
+        parrafo.innerHTML = 'llevas' + ' ' + total + ' ' + 'stickers'
+    }
+    ">verificar</button>
+    <p></p>
+    </div>
+
+</body>
+</html>
